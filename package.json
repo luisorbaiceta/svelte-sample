@@ -12,7 +12,7 @@
 		"format": "prettier --plugin-search-dir . --write .",
 		"test:integration": "playwright test",
 		"test:unit": "vitest",
-		"config": "npx playwright install-deps && npx playwright install"
+		"config": "npm install && npx playwright install-deps && npx playwright install"
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.28.1",
