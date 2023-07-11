@@ -1,0 +1,33 @@
+{
+	"files.exclude": {
+		"**/.git": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/CVS": true,
+		"**/.DS_Store": true,
+		"**/Thumbs.db": true,
+		"**/.svelte-kit": true,
+		"**/node_modules": true,
+		"**/.devcontainer": true,
+		"**/test-results": true
+	},
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true
+	},
+	"explorer.fileNesting.patterns": {
+		"+*.svelte": "+$(capture).*",
+		"svelte.config.js": "*.config.js",
+		".gitignore": ".gitattributes, .gitmodules, .gitmessage, .mailmap, .git-blame*",
+		"*.js": "$(capture).*.js, $(capture).js.map, $(capture).min.js, $(capture).d.ts",
+		"*.ts": "$(capture).ts, $(capture).*.ts",
+		"root.tsx": "entry.*.tsx",
+		"index.d.ts": "*.d.ts",
+		".env": "*.env, .env*, env.d.ts",
+		"dockerfile": ".dockerignore, dockerfile*",
+		"package.json": ".env*, .npm*, .eslint*, jsconfig.*, package-lock.json, .prettier*, .git*",
+		"remix.config.*": "server.*",
+		"root.js": "entry.*, cookies.*, sessions.*, style.css"
+	}
+}

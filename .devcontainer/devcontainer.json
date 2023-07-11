@@ -1,0 +1,21 @@
+{
+	"name": "Ubuntu",
+	"image": "mcr.microsoft.com/devcontainers/base:jammy",
+	"features": {
+		"ghcr.io/devcontainers/features/node:1": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"esbenp.prettier-vscode",
+				"dbaeumer.vscode-eslint",
+				"mhutchie.git-graph",
+				"bradlc.vscode-tailwindcss",
+				"github.vscode-github-actions",
+				"ms-playwright.playwright",
+				"svelte.svelte-vscode"
+			]
+		}
+	},
+	"postCreateCommand": "npm run config"
+}
